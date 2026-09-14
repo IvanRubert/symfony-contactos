@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact | Neon Store{% endblock %}
+{% block body_class %}landing-page{% endblock %}
+
+{% block body %}
+<section class="contact-neon">
+    <div class="container">
+        <div class="contact-neon__header text-center">
+            <p class="contact-neon__kicker">NEONSPARK SUPPORT</p>
+            <h1>Get in touch</h1>
+            <p>Have a project in mind or questions about our products? Send us a message and we’ll get back to you quickly.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-7">
+                <div class="contact-neon__card">
+                    {{ form_start(form, {'attr': {'class': 'contact-neon__form'}}) }}
+                    {{ form_errors(form) }}
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            {{ form_row(form.FirstName, {'attr': {'class': 'form-control contact-neon__input'}}) }}
+                        </div>
+                        <div class="col-sm-6">
+                            {{ form_row(form.LastName, {'attr': {'class': 'form-control contact-neon__input'}}) }}
+                        </div>
+                    </div>
+
+                    {{ form_row(form.Email, {'attr': {'class': 'form-control contact-neon__input'}}) }}
+                    {{ form_row(form.Subject, {'attr': {'class': 'form-control contact-neon__input'}}) }}
+                    {{ form_row(form.Message, {'attr': {'class': 'form-control contact-neon__textarea'}}) }}
+
+                    <div class="text-right">
+                        {{ form_row(form.Send, {'attr': {'class': 'btn btn-lg landing-cta'}}) }}
+                    </div>
+
+                    {{ form_end(form) }}
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <aside class="contact-neon__card contact-neon__info">
+                    <h3>Contact information</h3>
+                    <p>We usually respond within 24 hours from Monday to Friday.</p>
+
+                    <ul class="list-unstyled contact-neon__list">
+                        <li><i class="fa fa-phone"></i> (00228) 92229954</li>
+                        <li><i class="fa fa-envelope"></i> support@neonspark.com</li>
+                        <li><i class="fa fa-map-marker"></i> Lomé, Togo</li>
+                    </ul>
+
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-facebook sr-icons"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter sr-icons"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus sr-icons"></i></a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

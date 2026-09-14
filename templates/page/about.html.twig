@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}About | Neon Store{% endblock %}
+{% block body_class %}landing-page{% endblock %}
+
+{% block body %}
+<section class="about-neon">
+    <div class="container">
+        <div class="about-neon__hero text-center">
+            <p class="about-neon__kicker">WHO WE ARE</p>
+            <h1>Designing bold digital experiences</h1>
+            <p>
+                NeonSpark is a creative studio focused on memorable brand stories, high-impact visuals,
+                and conversion-driven digital products.
+            </p>
+        </div>
+
+        <div class="about-neon__banner">
+            <img class="img-responsive" src="{{ asset('images/about_us.jpg') }}" alt="NeonSpark team collaborating in the studio">
+        </div>
+
+        <div class="row about-neon__grid">
+            <div class="col-sm-6 col-md-3">
+                <article class="about-neon__card">
+                    <i class="fa fa-lightbulb-o"></i>
+                    <h3>Creative thinking</h3>
+                    <p>We build campaigns and products that stand out with originality and intent.</p>
+                </article>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <article class="about-neon__card">
+                    <i class="fa fa-users"></i>
+                    <h3>Collaborative team</h3>
+                    <p>Designers, developers, and strategists working together from idea to launch.</p>
+                </article>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <article class="about-neon__card">
+                    <i class="fa fa-line-chart"></i>
+                    <h3>Growth focused</h3>
+                    <p>Every decision is guided by impact, measurable performance, and business goals.</p>
+                </article>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <article class="about-neon__card">
+                    <i class="fa fa-heart"></i>
+                    <h3>Client first</h3>
+                    <p>We prioritize long-term partnerships built on transparency and trust.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="row about-neon__split">
+            <div class="col-md-6">
+                <div class="about-neon__panel">
+                    <h2>Our mission</h2>
+                    <p>
+                        We help brands communicate clearly and beautifully. From websites to campaigns,
+                        our work blends aesthetic precision with technical excellence.
+                    </p>
+                    <ul class="list-unstyled about-neon__list">
+                        <li><i class="fa fa-check"></i> Brand identity and visual systems</li>
+                        <li><i class="fa fa-check"></i> Product design and website development</li>
+                        <li><i class="fa fa-check"></i> Content strategy and campaign support</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-neon__panel">
+                    <h2>Our impact</h2>
+                    <div class="about-neon__metric">
+                        <span>Completed projects</span>
+                        <strong>180+</strong>
+                    </div>
+                    <div class="about-neon__metric">
+                        <span>Happy clients</span>
+                        <strong>95%</strong>
+                    </div>
+                    <div class="about-neon__metric">
+                        <span>Average response time</span>
+                        <strong>&lt; 24h</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
